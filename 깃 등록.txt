@@ -2,7 +2,7 @@ git bash에서
 
 git 등록하기
 1)유저 등록하기
-$ git config --global user.name "HanaKong"
+$ git config --global user.name "hanakong"
 
 2)유저의 이메일 주소 등록하기
 $ git config --global user.email "wonbin1301@gmail.com"
@@ -23,7 +23,7 @@ git commit -m "first commit" : pc의 git 영역으로 감
 
 이제 깃허브랑 연결해야함
 
-git remote add origin https://github.com/hanakong/Front.git
+git remote add origin https://github.com/hanakong/front.git
 
 -- git remote -v : 현재 잘 연결되어있는지 확인
 
@@ -32,3 +32,9 @@ git push origin master 입력후 token 넣기
 github 세팅에 
 
 git push -u origin main :
+
+다음 등록시
+add
+commit
+push
+만 진행하면 됨

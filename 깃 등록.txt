@@ -9,3 +9,24 @@ $ git config --global user.email "wonbin1301@naver.com"
 
 3) 등록 확인
 $ git config --list
+
+
+vsc에서 terminal -> new terminal
+<명령어>
+git init : 파일 초기화
+
+git add .
+
+-- git status : 현재 상태보기
+
+git commit -m "first commit" : pc의 git 영역으로 감
+
+이제 깃허브랑 연결해야함
+
+git remote add origin https://github.com/hanakong/Front.git
+
+-- git remote -v : 현재 잘 연결되어있는지 확인
+
+git push origin master 입력후 token 넣기
+
+git push -u origin main :

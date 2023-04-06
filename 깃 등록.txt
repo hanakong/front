@@ -1,0 +1,11 @@
+git bash에서
+
+git 등록하기
+1)유저 등록하기
+$ git config --global user.name "HanaKong"
+
+2)유저의 이메일 주소 등록하기
+$ git config --global user.email "wonbin1301@naver.com"
+
+3) 등록 확인
+$ git config --list

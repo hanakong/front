@@ -1,0 +1,4 @@
+ctrl + b 옆에 익스플로러 창 닫기
+ctrl + shift + k == 자바의 ctrl + d
+오른쪽 상단 미니맵 지우기
+view>appearance>minimap 체크

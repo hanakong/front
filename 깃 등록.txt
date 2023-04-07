@@ -34,7 +34,15 @@ github 세팅에
 git push -u origin main :
 
 다음 등록시
-add
-commit
-push
+git add . 
+git commit -m "날짜"
+git push origin ~~
 만 진행하면 됨
+
+가져올 때는 
+git pull origin master
+
+만약에 pull받은 폴더의 파일을 손상시켰을 경우에는 다시 fetch시킨 후 받아준다.
+git fetch --all
+이후
+git reset --hard origin/master

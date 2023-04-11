@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test9.html</title>
+  <script>
+    'use strict'; // 자바처럼 사용하게 만들어버림 -> 선언하고 사용하세요~
+    let su2 = 100;
+    console.log("1. su2 : " + (su2+=100));
+    console.log("typeof(su2) : " + typeof(su2));
+    {
+      console.log("2. su2 : " + (su2+=100));
+    }
+    console.log("3. su2 : " + su2);
+    console.log();
+    
+    {
+      let su3 = 100;
+      console.log("2.su3 : " + (su3+=100));
+    }
+    // console.log("3.su3 : " + (su3+=100));
+
+    const su4 = 100; 
+    // console.log("su4 : " + (su4 += 100)); // 값을 바꿀 수 없는 상수인데 값을 더했기 때문에 오류 발생
+    
+    su5 = 500; //타입을 지정하지도 않고 사용하네~? 헷갈리기 때문에 use strict을 통해 선언하고 사용하게 함
+    console.log("su5 : "+(su5+=100));
+
+  </script>
+</head>
+<body>
+  <h2>자바스크립트</h2>
+</body>
+</html>

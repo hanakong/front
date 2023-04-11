@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test16.html</title>
+  <script>
+    'use strict';
+    function calc() {
+      let su1, op, su2, res, temp, ans;
+      while(true) {
+        su1 = prompt("첫번째 수를 입력하세요");
+        op = prompt("사용한 연산자를 입력하세요(+/-/*//)");
+        su2 = prompt("두번째 수를 입력하세요");
+        res = eval(su1 + op + su2);
+        temp = su1 + op + su2;
+        alert("출력결과 : \n" + temp + "=" + res + "입니다.");
+        ans = confirm("작업을 계속 하시겠습니까?");
+        if(!ans) break;
+      } // 정해진 연산자 외에 다른 연산자가 들어올 경우 응답을 제대로 할 수 없기 때문에 좋은 프로그램이 아님
+    }
+  </script>
+</head>
+<body>
+  <h2>두 수를 입력하여 4칙연산 계산하기</h2>
+  <p>
+    <input type="button" value="계산" onclick="calc()" />
+  </p>
+</body>
+</html>

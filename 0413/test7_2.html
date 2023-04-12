@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <script>
+    function calc() {
+      // let su = myform.su.value;
+      let su = '';
+      let su1 = '';
+      for(let i=0; i<document.getElementsByName("product").length; i++) {
+        su += document.getElementsByName("product")[i].value + " | ";
+        su1 += document.getElementsByName("price")[i].value + " | ";
+        su2 += document.getElementsByName("price")[i].value;
+      }
+    demo.innerHTML = su;
+    demo1.innerHTML = su1;
+    demo2.innerHTML = su2;
+    }
+  </script>
+</head>
+<body>
+  <div class="inner">
+    <h2>멀티 텍스트 입력처리 연습</h2>
+  </div>
+  <form name="myform">
+    <div class="table">
+      <div class="product-container">
+        <div class="product-name">
+          <div class="product1">상품1</div>
+          <div class="product2">상품2</div>
+          <div class="product3">상품3</div>
+          <div class="product4">상품4</div>
+          <div class="product5">상품5</div>
+        </div>
+        <div class="product-input">
+          <div class="product-input_1">
+            <input type="text" name="product" value="냉장오" /><br />
+          </div>
+          <div class="product-input_2">
+            <input type="text" name="product" value="오디오" /><br />
+          </div>
+          <div class="product-input_3">
+            <input type="text" name="product" value="TV" /><br />
+          </div>
+          <div class="product-input_4">
+            <input type="text" name="product" value="선풍기" /><br />
+          </div>
+          <div class="product-input_5">
+            <input type="text" name="product" value="세탁기" /><br />
+          </div>
+        </div>
+      </div>
+      <div class="price-container">
+        <div class="price-name">
+          <div class="price1">가격1 </div>
+          <div class="price1">가격2 </div>
+          <div class="price1">가격3 </div>
+          <div class="price1">가격4 </div>
+          <div class="price1">가격5 </div>
+        </div>
+        <div class="price-input">
+          <div class="price-input1">
+            <input type="number" name="price" value="1" /><br />
+          </div>
+          <div class="price-input2">
+            <input type="number" name="price" value="2" /><br />
+          </div>
+          <div class="price-input3">  
+            <input type="number" name="price" value="3" /><br />
+          </div>
+          <div class="price-input4">
+            <input type="number" name="price" value="4" /><br />
+          </div>
+          <div class="price-input5">
+            <input type="number" name="price" value="5" /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <input type="button" value="계산" onclick="calc()" /> -->
+    <div class="button-container">
+      <button class="button "type="button" onclick="calc()">계산</button>
+    </div>
+    <!-- html5이상에서만 지원 -->
+  </form>
+  <hr />
+  <div id="demo"></div>
+  <div id="demo1"></div>
+  <div id="demo2"></div>
+</body>
+</html>

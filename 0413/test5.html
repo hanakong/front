@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test5.html</title>
+  <script>
+    'use strict';
+
+    // function enterCheck() {
+    //   let keyCode = window.event.keyCode;
+    //   /* 입력된 모든 것을 감지하기 때문에, url입력하고 엔터쳤을 때만으로 한정해줘야한다 */
+    //   if(keyCode == 13) urlCheck();
+    //   /* 옛날 타자기 엔터가 13번 다음줄로 넘어가는 것이 10번(keycode 확인) */
+    // }
+    
+    function urlCheck() {
+      let url = document.getElementById("url").value.trim();
+
+      if(url == "") {
+        alert("이동할 주소를 다시 입력해주세요");
+        document.getElementById("url").focus();
+      }
+      else {
+        location.href = url;
+        // alert();
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <form action="">
+    <p>
+      이동할 주소를 입력 후 이동버튼을 클릭하면 해당주소로 이동하기
+    </p>
+    <hr />
+    <div>
+      이동할 주소 : <input type="text" name="url" id="url"  placeholder="이동하실 주소를 입력해주세요" onkeypress="if(event.keyCode==13) urlCheck();" value="https://" autofocus />
+      <input type="button" value="이동" onclick="urlCheck()" />
+      <!-- <input type="submit" value="서브밋" /> -->
+      <!-- submit은 onclick 쓸 필요 없다, form이 필요하다 -->
+      <!-- onclick은 마우스로 클릭해야 작동, 엔터를 친 것은 온클릭이 아님 -->
+      <!-- 엔터를 치면 서브밋처럼 적용되기 때문에 -->
+    </div>
+  </form>
+</body>
+</html>

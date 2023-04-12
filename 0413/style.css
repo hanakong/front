@@ -1,0 +1,60 @@
+.inner {
+  text-align: center;
+}
+.table {
+  
+}
+.product-container {
+  display: inline-flex;
+  text-align: center;
+}
+.product-name {
+  background-color: coral;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  color: beige;
+  padding: 1rem;
+  margin-left: 40rem;
+}
+.product-input {
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  background-color: #eee;
+}
+.product-input_1 {
+}
+.price-container {
+  display: inline-flex;
+}
+.price-name {
+  background-color: coral;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  color: beige;
+}
+.price-input {
+  background-color: #eee;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  }
+.button-container {
+  text-align: center;
+}
+.button {
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  border: none;
+  background-color: #004fff;
+  color: white;
+  box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  position: absolute;
+}
+.button:hover {
+  background-color: rgba(0, 79, 255, 0.9);
+
+
+}

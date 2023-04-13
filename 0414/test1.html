@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test1.html(정규식)</title>
+  <script src="test1.js"></script>
+</head>
+<body>
+  <h2>정규식(Regular Expression)</h2>
+  <form name="myform">
+    <div>
+      문자열 : 
+      <p><input type="text" name="content" id="content" autofocus required /></p>
+      <p><input type="button" value="정규식체크" onclick="regexCheck()" /></p>
+    </div>
+  </form>
+  <hr />
+  <pre>
+    형식 : / ~~~~~ / 플러그인
+    플러그인 : 
+      g(global) : 전체범위에서의 처리(전역변수) 패턴과 일치하는 모든 정보 찾기 // g를 사용하지 않으면 일치하는 첫번째 정보만 찾음
+      m(multiline) : textarea태그에서 여러줄 처리할 때 사용 //  문자열의 행이 바뀌더라도 검색을 계속한다.
+      s(single line) : 한줄만 처리(기본값) //.​(모든 문자 정규식)이 개행 문자 \n도 포함하도록
+      i(ignore case) : 영문자인 경우 대문자와 소문자의 구별을 하지 않는다.
+      u(unicode) : 유니코드에 대한 처리
+      y(stiky) : 문자 내 특정 위치에서 검색을 진행하는 ‘sticky’ 모드를 활성화
+
+      정규식을 실행하기 위해 사용되는 함수
+        1. 사용자 입력 문자열.match(정규표현식변수) <!-- 내용을 포함하고 있는가 //내용 포함유무에 대한 비교시-->
+        2. 정규표현식변수.test(사용자입력문자열) <!-- 1번보다 2번을 더 자주 사용하지만, 사용하기는 1번이 더 편함 //구체적인 문자(열)간의 체크 비교시-->
+  </pre>
+  <p>form안에서의 값을 입력 후 서버로 전송시, 유효성 검사는 필수입니다.</p>
+</body>
+</html>

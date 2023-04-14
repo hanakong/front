@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test15.html</title>
+  <script>
+    'use strict';
+
+    // 배열선언 : new Array();
+    const arr1 = new Array(); // java : int[] arr1 = new int[5];
+    const fruits = ['사과','배','포도','딸기','바나나'];
+
+    document.write("1. " + fruits + "<br />");
+    document.write("-----------------------------<br />");
+    console.log("1. " + fruits); //콘솔로그 확인
+    document.write("-----------------------------<br />");
+    document.write("2. " + fruits.length + "<br />");
+    document.write("-----------------------------<br />");
+    document.write("3. " + fruits[0] + "<br />");
+    document.write("-----------------------------<br />");
+    document.write("4. " + fruits[fruits.length-1] + "<br />");
+    document.write("-----------------------------<br />");
+    // 향상된 for문(of) - 값을 추출할 때 사용
+    for(let fruit of fruits) {
+      document.write(fruit + " / ");
+    }
+    document.write("<br/>-----------------------------<br />");
+
+    // 향상된 for문(in) - 인덱스 번호 추출
+    for(let fruit in fruits) {
+      document.write(fruit + " / ");
+    };
+    document.write("<br/>-----------------------------<br />");
+
+    //향상된 for문(forEach)
+    fruits.forEach(function(){
+      document.write(" / ")
+    });
+    document.write("<br/>-----------------------------<br />");
+
+    //향상된 for문(forEach)
+    fruits.forEach(function(fruit, index){
+      document.write(index + ". "+ fruit + " / ")
+    });
+    document.write("<br/>-----------------------------<br />");
+
+    //향상된 for문(forEach)
+    fruits.forEach(function(fruit, index, array){
+      document.write(index + ". "+ fruit + " // " + array + "<br/>")
+    });
+    document.write("-----------------------------<br />");
+    
+    // Arrow function
+    fruits.forEach((fruit, index) => {
+      document.write(index + " : " + fruit + "<br/>");
+    });
+    document.write("-----------------------------<br />");
+    
+    // map 사용법 : 객체명.map(index,요소,배열)
+    fruits.map((fruit, i) => {
+      document.writeln(i + ". " + fruit + "<br />")
+    });
+
+
+  </script>
+</head>
+<body>
+  <h2>배열 연습</h2>
+  <hr />
+  <div id="demo"></div>
+</body>
+</html>
